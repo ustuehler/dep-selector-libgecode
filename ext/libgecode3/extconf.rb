@@ -27,7 +27,7 @@ module GecodeBuild
 
   def self.configure_cmd
     args = %W[
-      sh
+      bash
       #{configure}
       --prefix=#{prefix}
       --disable-doc-dot
@@ -90,10 +90,10 @@ module GecodeBuild
     setup_env
     patch_configure
     system(*configure_cmd) &&
-      system("make", "clean") &&
-      system("make", "-j", "5") &&
-      system("make", "install") &&
-      system("make", "distclean")
+      system("gmake", "clean") &&
+      system("gmake", "-j", "5") &&
+      system("gmake", "install") &&
+      system("gmake", "distclean")
   end
 
   def self.run

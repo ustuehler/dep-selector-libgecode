@@ -2692,7 +2692,7 @@ $as_echo_n "checking for the host operating system... " >&6; }
        guess_host_os=${with_host_os}
         fi
           case ${guess_host_os} in
-       GNU/kFreeBSD|*inux*|FreeBSD|NetBSD)
+       GNU/kFreeBSD|*inux*|FreeBSD|NetBSD|OpenBSD)
        host_os=linux
        { $as_echo "$as_me:${as_lineno-$LINENO}: result: Linux" >&5
 $as_echo "Linux" >&6; }
@@ -8206,14 +8206,14 @@ $as_echo "no" >&6; }
      { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
 $as_echo "yes" >&6; }
 
-       CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS}"
-       CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS}"
+       #CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS}"
+       #CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS}"
    fi
    else
      { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether ${CXX} accepts -Qunused-arguments" >&5
 $as_echo_n "checking whether ${CXX} accepts -Qunused-arguments... " >&6; }
    ac_gecode_save_CXXFLAGS="${CXXFLAGS}"
-   CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS} -Werror"
+   #CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS} -Werror"
    ac_ext=cpp
 ac_cpp='$CXXCPP $CPPFLAGS'
 ac_compile='$CXX -c $CXXFLAGS $CPPFLAGS conftest.$ac_ext >&5'
@@ -8242,7 +8242,7 @@ $as_echo "no" >&6; }
         { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
 $as_echo "yes" >&6; }
 
-        CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS}"
+        #CXXFLAGS="-Qunused-arguments${CXXFLAGS:+ }${CXXFLAGS}"
       fi
 
 else
@@ -8262,7 +8262,7 @@ ac_compiler_gnu=$ac_cv_cxx_compiler_gnu
    { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether ${CC} accepts -Qunused-arguments" >&5
 $as_echo_n "checking whether ${CC} accepts -Qunused-arguments... " >&6; }
    ac_gecode_save_CFLAGS="${CFLAGS}"
-   CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS} -Werror"
+   #CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS} -Werror"
    ac_ext=c
 ac_cpp='$CPP $CPPFLAGS'
 ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
@@ -8291,7 +8291,7 @@ $as_echo "no" >&6; }
         { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
 $as_echo "yes" >&6; }
 
-        CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS}"
+        #CFLAGS="-Qunused-arguments${CFLAGS:+ }${CFLAGS}"
       fi
 
 else
